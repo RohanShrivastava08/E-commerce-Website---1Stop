@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-Commerce | Contact Us</title>
+
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+	</head>
+<body>
+
+	<nav class="nav nav_top">
+		<div class="logo">
+			<a href="index.html"><img src="1Stop 01.png" width="150"></a>
+		</div>
+		<div class="nav_side">
+			<a href="about.html">About Us</a>
+			<a href="service.html">Services</a>
+			<a href="blog.html">Blogs</a>
+			<a href="contact.html">Contact</a>
+			<a href=" ">Login/Register</a>
+		</div>
+	</nav>
+
+
+<div class="contact_container">
+	<h2>Contact Us</h2>
+	<div class="g_map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.424650509136!2d77.70440411477304!3d13.198634790707255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1cfe75446265%3A0x296c70e9a129418e!2sKempegowda%20International%20Airport%20Bengaluru!5e0!3m2!1sen!2sin!4v1636264302653!5m2!1sen!2sin" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</div>
+	<div class="contact_content">
+		<p><b>Address: Bengaluru, India </b></p>
+		<p><b>Call: +91 8989654542 </b></p>
+		<p><b>Mail: support@gmail.com </b></p>
+	</div>
+</div>
+
+
+	<div class="feed">
+	<h2>Write A Review</h2>
+	<div class="feed_form">
+		<form name="submit_googlesheet" method="post">
+			<input type="text" name="Name" placeholder="Name"><br>
+			<input type="email" name="Email" placeholder="Email"><br>
+			<input type="number" name="Number" placeholder="Contact"><br>
+			<textarea rows="5" cols="7" name="Review" placeholder="Write your Review"></textarea><br>
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+</div>
+
+
+<footer>
+	<div class="footer_logo">
+		<a href="#"><img src="1Stop 01.png" width="150"></a>
+	</div>
+	<div class="page">
+		<h3>Pages</h3>
+		<a href="about.html">About Us</a>|
+		<a href="service.html">Services</a>|
+		<a href="blog.html">Blogs</a>|
+		<a href="login.html">Login</a>|
+		<a href="sign.html">Sign Up</a>
+	</div>
+	<div class="doc">
+		<h3>Documents</h3>
+		<a href="">Privacy Policy</a>|
+		<a href="">Terms Of Use</a>|
+		<a href="">Refund Policy</a>
+	</div>
+	<div class="social">
+		<h3>Follow Us</h3>
+		<a href="https://www.facebook.com/pages/category/Education-Website/1Stopai-102490171820303/" target="_black"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+		<a href="https://www.linkedin.com/company/1stop-ai/?originalSubdomain=in" target="_black"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/1stop.ai/?hl=en" target="_black"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+	</div>
+	<div class="contact">
+		<h3>Contact Us</h3>
+		<a href="https://api.WhatsApp.com/send?phone=+919876543210" target="_black"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+		<a href="tel: +919876543210"><i class="fa fa-mobile" aria-hidden="true"></i></a>
+		<a href="mailto: support@istop.ai"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+	</div>
+	<hr>
+	<p>Copyright &copy; 2021 1stop. All rights reerved</p>
+</footer>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript">
+ const scriptURL = 'https://script.google.com/macros/s/AKfycbwiaG4R1VCAVvnweyIqncsIjLCyIwYBJYkAwG7_5UQtV_icpCov3nH24KO_PFWcdp2f/exec'
+            const form = document.forms['submit_googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thank You.! For your Review..Hope you had great shopping with us..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          
+
+</script>
+
+</body>
+
+</html>
